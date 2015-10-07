@@ -100,3 +100,5 @@ four_plots <- function() {
 	# reset par back to original settings.
 	par(old.par)
 }
+
+# © Copyright 2015 Alexander McLin
