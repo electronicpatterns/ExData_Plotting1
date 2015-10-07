@@ -15,7 +15,7 @@ source("setup.R")
 png("plot1.png")
 
 # Call plot_globalactivepower_hist, will be sent to the png device.
-plot_globalactivepower_hist()
+plot_globalactivepower_hist() # this function is defined in setup.R
 
 # Turn off the png device and finalize the PNG file.
 dev.off()

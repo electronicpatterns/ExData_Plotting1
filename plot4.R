@@ -15,7 +15,7 @@ source("setup.R")
 png("plot4.png")
 
 # Call four_plots, it will be sent to the png device.
-four_plots()
+four_plots() # this function is defined in setup.R
 
 # Turn off the png device and finalize the PNG file.
 dev.off()
