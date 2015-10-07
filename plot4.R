@@ -19,3 +19,29 @@ four_plots()
 
 # Turn off the png device and finalize the PNG file.
 dev.off()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# © Copyright 2015 Alexander McLin
