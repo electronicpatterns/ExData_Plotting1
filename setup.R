@@ -41,13 +41,15 @@ plot_globalactivepower_hist <- function() {
 				xlab = "Global Active Power (kilowatts)"))
 }
 
-plot_globalactivepower_versus_time <- function() {
+# This function has two optional xlab and ylab parameters software
+# we can use different label names for different plots.
+plot_globalactivepower_versus_time <- function(xlab = "", ylab = "") {
 	# Plot global active power versus time
 	with(reduced.data, plot(Time, 
 				Global_active_power, 
 				type = "l", 
-				xlab = "", 
-				ylab = "Global Active Power (kilowatts)"))
+				xlab = xlab, 
+				ylab = ylab))
 }
 
 plot_submeterings_versus_time <- function() {
@@ -92,7 +94,7 @@ four_plots <- function() {
 	old.par <- par(mfcol = c(2,2))
 	
 	#  Call four plot functions to create the plots in the 2 x 2 grid.
-	plot_globalactivepower_versus_time()
+	plot_globalactivepower_versus_time(ylab = "Global Active Power")
 	plot_submeterings_versus_time()
 	plot_voltage_versus_time()
 	plot_globalreactivepower_versus_time()

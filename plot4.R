@@ -12,7 +12,7 @@
 source("setup.R")
 
 # Turn on the png device.
-png("plot4.png")
+png("plot4.png", width = 480, height = 480)
 
 # Call four_plots, it will be sent to the png device.
 four_plots() # this function is defined in setup.R

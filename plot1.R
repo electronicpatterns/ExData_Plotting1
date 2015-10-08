@@ -12,7 +12,7 @@
 source("setup.R")
 
 # Turn on the png device.
-png("plot1.png")
+png("plot1.png", width = 480, height = 480)
 
 # Call plot_globalactivepower_hist, will be sent to the png device.
 plot_globalactivepower_hist() # this function is defined in setup.R

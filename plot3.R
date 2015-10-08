@@ -12,7 +12,7 @@
 source("setup.R")
 
 # Turn on the png device.
-png("plot3.png")
+png("plot3.png", width = 480, height = 480)
 
 # Call plot_submeterings_versus_time, it will be sent to the png device.
 plot_submeterings_versus_time() # this function is defined in setup.R

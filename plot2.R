@@ -13,10 +13,10 @@
 source("setup.R")
 
 # Turn on the png device.
-png("plot2.png")
+png("plot2.png", width = 480, height = 480)
 
 # Call plot_globalactivepower_versus_time, it will be sent to the png device.
-plot_globalactivepower_versus_time() # this function is defined in setup.R
+plot_globalactivepower_versus_time(ylab = "Global Active Power (kilowatts)") # this function is defined in setup.R
 
 # Turn off the png device and finalize the PNG file.
 dev.off()
